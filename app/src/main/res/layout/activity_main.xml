@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lenovo.adminmatchpoint.MainActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/playeridtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="enter playerid"
+        />
+    <EditText
+        android:id="@+id/matchscoretext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="enter match score"/>
+    <RadioGroup
+        android:id="@+id/matchstatusradiogroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/winradiobutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="won"/>
+        <RadioButton
+            android:id="@+id/lossradiobutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="lost"/>
+    </RadioGroup>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter"
+        android:onClick="enterScore"/>
+    <Button
+        android:text="update ranks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="updateRank"/>
+    <Button
+        android:text="update age/category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="updateAge"/>
+    <Button
+        android:text="add tournament"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="addTournament"/>
+    <Button
+        android:text="get Match arrangements"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="getTournament"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="add rank list of this month"
+        android:onClick="addRankList"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="add Center and slots"
+        android:onClick="addCenterSlots"/>
+</LinearLayout>
+</ScrollView>

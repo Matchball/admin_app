@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lenovo.adminmatchpoint.AddTournamentActivity">
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+    <EditText
+        android:id="@+id/tournamentnametext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tournament name/id"
+        />
+    <EditText
+        android:id="@+id/citytext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="city" />
+    <EditText
+        android:id="@+id/venuetextt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Venue" />
+    <TextView
+        android:text="Select starting date:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"/>
+    <DatePicker
+        android:id="@+id/startingdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </DatePicker>
+    <TextView
+        android:text="choose organizer type from below:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:id="@+id/organizerrradiogroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/matchpointradiobutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MatchPoint"/>
+        <RadioButton
+            android:id="@+id/externalradiobutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="External"/>
+    </RadioGroup>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Categories allowed:"/>
+    <RadioButton
+        android:id="@+id/BU13radiobutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BU13"/>
+    <RadioButton
+        android:id="@+id/GU13radiobutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GU13"/>
+    <RadioButton
+        android:id="@+id/BU15radiobutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BU15"/>
+    <RadioButton
+        android:id="@+id/GU15radiobutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GU15"/>
+    <RadioButton
+        android:id="@+id/BU11radiobutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BU11"/>
+    <RadioButton
+        android:id="@+id/GU11radiobutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GU11"/>
+    <RadioButton
+        android:id="@+id/BU17radiobutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BU17"/>
+    <RadioButton
+        android:id="@+id/GU17radiobutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GU17"/>
+    <RadioButton
+        android:id="@+id/BU19radiobutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BU19"/>
+    <RadioButton
+        android:id="@+id/GU19radiobutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GU19"/>
+    <TextView
+        android:text="Select registration deadline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <DatePicker
+        android:id="@+id/registrationdeadline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </DatePicker>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Tournament"
+        android:onClick="addNewTournament"/>
+
+</LinearLayout>
+</ScrollView>
